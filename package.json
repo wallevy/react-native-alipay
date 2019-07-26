@@ -1,35 +1,27 @@
 {
-  "name": "react-native-alipay",
+  "name": "@wallevy/react-native-alipay",
   "title": "React Native Alipay",
-  "version": "1.0.0",
-  "description": "",
+  "description": "React Native Alipay",
+  "version": "0.0.4",
   "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wallevy/react-native-alipay.git"
+  },
+  "keywords": [
+    "react-native-alipay"
+  ],
+  "author": {
+    "name": "wallevy",
+    "email": ""
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/github_account/react-native-alipay.git",
-    "baseUrl": "https://github.com/github_account/react-native-alipay"
-  },
-  "keywords": [
-    "react-native"
-  ],
-  "author": {
-    "name": "Your Name",
-    "email": "yourname@email.com"
-  },
-  "license": "MIT",
-  "licenseFilename": "LICENSE",
-  "readmeFilename": "README.md",
   "peerDependencies": {
-    
-    "react": "16.2.0",
-    "react-native": "^0.52.0"
+    "react": "16.8.6",
+    "react-native": "^0.60.3"
   },
-  "devDependencies": {
-    
-    "react": "16.2.0",
-    "react-native": "^0.52.0"
-  }
+  "devDependencies": {}
 }
