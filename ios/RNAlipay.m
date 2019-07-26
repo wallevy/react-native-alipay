@@ -32,7 +32,7 @@ RCT_REMAP_METHOD(pay, payInfo:(NSString *)payInfo resolver:(RCTPromiseResolveBlo
 
 
   [[AlipaySDK defaultService] payOrder:payInfo fromScheme:appScheme callback:^(NSDictionary *resultDic) {
-    [RCTAlipay handleResult:resultDic];
+    [RNAlipay handleResult:resultDic];
   }];
 }
 

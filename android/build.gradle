@@ -1,6 +1,8 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
 buildscript {
     repositories {
-        google()
         jcenter()
     }
     dependencies {
@@ -8,8 +10,6 @@ buildscript {
     }
 }
 
-apply plugin: 'com.android.library'
-apply plugin: 'maven'
 
 def safeExtGet(prop, fallback) {
     rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
@@ -37,9 +37,6 @@ android {
 
 repositories {
     maven {
-        // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
-        // Matches the RN Hello World template
-        // https://github.com/facebook/react-native/blob/1e8f3b11027fe0a7514b4fc97d0798d3c64bc895/local-cli/templates/HelloWorld/android/build.gradle#L21
         url "$projectDir/../node_modules/react-native/android"
     }
     mavenCentral()

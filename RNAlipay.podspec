@@ -9,17 +9,19 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                   RNAlipay
                    DESC
-  s.homepage     = "https://github.com/author/RNAlipay"
+  s.homepage     = "https://github.com/wallevy/RNAlipay"
   s.license      = "MIT"
-  # s.license    = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author       = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNAlipay.git", :tag => "#{s.version}" }
+  s.platform     = :ios, "9.3"
+  s.source       = { :git => "https://github.com/wallevy/RNAlipay.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
   s.requires_arc = true
 
   s.dependency "React"
-  #s.dependency "others"
+  s.resource  = 'ios/AlipaySDK.bundle'
+  s.vendored_frameworks = 'ios/AlipaySDK.framework'
+  s.frameworks = "SystemConfiguration", "CoreTelephony", "QuartzCore", "CoreText", "CoreGraphics", "UIKit", "Foundation", "CFNetwork", "CoreMotion"
+  s.library = "c++", "z"
 end
 
