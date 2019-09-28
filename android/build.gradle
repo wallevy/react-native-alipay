@@ -4,6 +4,7 @@ apply plugin: 'maven'
 buildscript {
     repositories {
         jcenter()
+        maven { url 'https://maven.google.com' }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:3.4.2")
@@ -40,10 +41,6 @@ repositories {
     maven {
         url "$projectDir/../node_modules/react-native/android"
     }
-    maven {
-        url 'https://maven.google.com'
-    }
-
     flatDir {
         dirs 'libs'
     }

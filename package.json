@@ -2,7 +2,7 @@
   "name": "@wallevy/react-native-alipay",
   "title": "React Native Alipay",
   "description": "React Native Alipay",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "main": "index.js",
   "license": "MIT",
   "repository": {
