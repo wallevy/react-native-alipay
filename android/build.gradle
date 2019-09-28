@@ -36,10 +36,13 @@ android {
 }
 
 repositories {
+    mavenCentral()
     maven {
         url "$projectDir/../node_modules/react-native/android"
     }
-    mavenCentral()
+    maven {
+        url 'https://maven.google.com'
+    }
 
     flatDir {
         dirs 'libs'
