@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/wallevy/RNAlipay"
   s.license      = "MIT"
   s.author       = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "9.3"
+  s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/wallevy/RNAlipay.git", :tag => "#{s.version}" }
 
   s.source_files = "ios/**/*.{h,m}"
